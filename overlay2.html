@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="angular.min.js"></script>
+  <script src="fact_p.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="normalize.css" rel="stylesheet" type="text/css">
+  <link href="si.css" rel="stylesheet" type="text/css">
+  <title>si</title>
+</head>
+
+<body ng-app="app">
+  <br />
+  <br />
+  <div contenteditable>
+    <table tbl-directive ng-model="tblmodel">
+      <thead>
+        <tr>
+          <th style="width:19%;">th</th>
+          <th style="width:27%;">thA</th>
+          <th style="width:27%;">thB</th>
+          <th style="width:27%;">thC</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>th</th>
+          <td>A1</td>
+          <td>B1</td>
+          <td>C1</td>
+        </tr>
+        <tr>
+          <th>th</th>
+          <td>A2</td>
+          <td>B2</td>
+          <td>C2</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>--------------------------------------------------------------------------</p>
+  
+  <table ng-model="TblModel">
+    <thead>
+      <tr>
+        <th style="width:19%;">th</th>
+        <th style="width:27%;">thA</th>
+        <th style="width:27%;">thB</th>
+        <th style="width:27%;">thC</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>th</th>
+        <td>A1</td>
+        <td>B1</td>
+        <td>C1</td>
+      </tr>
+      <tr>
+        <th>th</th>
+        <td>A1</td>
+        <td>B2</td>
+        <td>C2</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
+
+<!--  -->
+<!-- note: opacity also affect stacking order -->
+<!-- div {
+  z-index: 1; /* only effects elements that have a position value other than static */
+} -->
+<!-- static is the default value - is not positioned in any special way -->
+<!-- relative behaves the same as static unless you add some properties. -->
+<!-- top, right, bottom, and left properties will cause it to be adjusted away from its normal position -->
+<!-- absolute -->
+<!-- top, right, bottom, and left properties will cause it to be adjusted relative to the nearest positioned ancestor -->
+<!-- display properties - http://www.w3schools.com/cssref/pr_class_display.asp -->
+<!-- table-layout: fixed - The layout is fixed based on the first row. Set the with of those, and the rest of the table follows. -->
